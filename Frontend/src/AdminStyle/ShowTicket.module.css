@@ -1,0 +1,41 @@
+li {
+	list-style-type: none;
+	margin-bottom: 2rem;
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 50px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.flex img {
+	width: 500px;
+	height: 200px;
+}
+
+.flex h4 {
+	padding-left: 10px;
+}
+
+.flex h2 {
+	padding-left: 10px;
+}
+
+.ticket {
+	background: #fff;
+	/* padding: 34px; */
+
+	padding-bottom: 10px;
+	padding-right: 10px;
+	border-radius: 6px;
+	box-shadow: 0 0px 5px 5px rgba(0, 0, 0, 0.2);
+	margin-bottom: 2rem;
+
+	width: 500px;
+	height: 500px;
+	margin-inline: auto;
+
+}

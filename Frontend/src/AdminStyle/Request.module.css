@@ -1,0 +1,24 @@
+.wrapper {
+	display: flex;
+	gap: 1rem;
+}
+
+.main {
+	width: 100%;
+}
+
+.main h2 {
+	padding: 2rem;
+	background-color: black;
+	color: #d3b923;
+	width: 100%;
+}
+
+.btn-box {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.btn-box button {
+	transition: all 0.3s;
+}

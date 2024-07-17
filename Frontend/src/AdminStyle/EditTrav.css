@@ -1,0 +1,101 @@
+.modal .modal-dialog {
+    max-width: 400px;
+}
+
+.modal .modal-header,
+.modal .modal-body,
+.modal .modal-footer {
+    padding: 20px 30px;
+}
+
+.modal .modal-content {
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.modal .modal-footer {
+    background: #ecf0f1;
+    border-radius: 0 0 3px 3px;
+}
+
+.modal .modal-title {
+    display: inline-block;
+}
+
+.modal .form-control {
+    border-radius: 2px;
+    box-shadow: none;
+    border-color: #dddddd;
+}
+
+.modal textarea.form-control {
+    resize: vertical;
+}
+
+.modal .btn {
+    border-radius: 2px;
+    min-width: 100px;
+}
+
+.modal form label {
+    font-weight: normal;
+}
+ 
+.headadd{
+    padding: 20px 30px !important;
+    padding-left:30px;
+    height:70px;
+}
+.bodyadd{
+    padding: 20px 30px !important; 
+    
+    height:90px;
+    align-items: flex-start;
+    
+    justify-content: space-between;
+    
+}
+.footeradd{
+    background: #ecf0f1 !important;
+    height:90px;
+    padding: 20px 30px !important;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.btnad{
+    margin-left:30px !important;
+}
+.btnx{
+    background:none;
+    border:none;
+    font-size:25px;
+    color:#566787;
+
+}
+ .newedit{
+    display:block;
+ }
+ #edit{
+    position:fixed;
+    min-height:370px;
+    width:400px;
+    margin-top:30px;
+    margin-left:500px;
+    background:white;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #566787;
+    box-shadow: 0 0px 10px 10px rgba(0, 0, 0, 0.2);
+    display:none;
+    
+ }
+ .footeredit{
+    background: #ecf0f1 !important;
+    height:90px;
+    padding: 20px 30px !important;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top:170px;
+}

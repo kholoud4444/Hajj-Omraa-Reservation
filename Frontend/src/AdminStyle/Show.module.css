@@ -1,0 +1,16 @@
+.wrapper {
+	display: flex;
+	gap: 1rem;
+	width: 100%;
+}
+
+.main {
+	width: 100%;
+}
+
+.main h2 {
+	padding: 2rem;
+	background-color: black;
+	color: #d3b923;
+	margin-bottom: 2rem;
+}

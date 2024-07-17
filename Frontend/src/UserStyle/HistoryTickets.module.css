@@ -1,0 +1,36 @@
+.ticket {
+	background: #fff;
+
+	border-radius: 6px;
+	box-shadow: 0 0px 5px 5px rgba(0, 0, 0, 0.2);
+	margin-bottom: 2rem;
+
+	max-width: 40rem;
+	margin-inline: auto;
+	list-style-type: none;
+}
+
+.ticket:last-of-type {
+	margin-bottom: 5rem;
+}
+
+#accept {
+	display: block;
+	background-color: #d3b923;
+	color: black;
+	text-transform: capitalize;
+	border: none;
+	border-radius: 10px;
+	margin-left: auto;
+	padding: 0.8rem 1rem;
+	transition: all 0.4s;
+}
+
+#accept:hover {
+	background-color: #d3b923;
+}
+
+ul img {
+	width: 40rem;
+	height: 300px;
+}

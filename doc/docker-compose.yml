@@ -1,0 +1,40 @@
+version: "3"
+
+services:
+
+  transport:
+    build: ./Backend/Transportation
+    container_name: Transport_container
+    ports:
+      - "3001:3001"
+    depends_on:
+      - trans-DB
+    volumes:
+      - "/app/node_modules" 
+    networks:
+      - Hajj-app
+
+  trans-DB:
+    image: mysql:8.0
+    container_name: trans-DB
+    environment:
+      MYSQL_DATABASE: trans
+      MYSQL_USER: users
+      MYSQL_PASSWORD: users
+    networks:
+      - Hajj-app
+    volumes:
+      - /var/lib/mysql
+    ports:
+      - "3306:3306"
+
+networks:
+  Hajj-app:
+    driver: bridge
+# volumes:
+#   users-volume:
+#     driver: local
+#   products-volume:
+#     driver: local
+#   shopping-cart-volume:
+#     driver: local

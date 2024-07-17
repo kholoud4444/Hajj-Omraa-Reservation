@@ -1,0 +1,24 @@
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin-inline: auto;
+	padding: 2rem;
+	text-align: center;
+	font-family: arial;
+	color: #8f7c16;
+	background-color: white;
+	border-radius: 10px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	max-width: 22rem;
+	margin-block: 2rem;
+}
+
+.avatar {
+	max-height: 130px;
+	max-width: 100px;
+	border-radius: 50%;
+}

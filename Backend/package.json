@@ -1,0 +1,36 @@
+{
+  "name": "busbooking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "build": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariamHussienHelmy/Bus-booking.git"
+  },
+  "author": "Maryoma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariamHussienHelmy/Bus-booking/issues"
+  },
+  "homepage": "https://github.com/MariamHussienHelmy/Bus-booking#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-validator": "^6.15.0",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.7",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7"
+  }
+}

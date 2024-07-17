@@ -1,0 +1,29 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 230px;
+    width: 200px;
+    background: #8080801c;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.filterby {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    background: #8080801c;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.all {
+    position: fixed;
+    top:0;
+    left:0;
+    margin-top:100px;
+
+}

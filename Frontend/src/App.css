@@ -1,0 +1,20 @@
+html,
+body {
+	width: 100%;
+}
+
+#edit-modal,
+#add-modal,
+#add-appointment-modal {
+	display: none;
+}
+
+.margin-bottom-md {
+	margin-bottom: 2rem !important;
+}
+
+.no-data {
+	background-color: #fff !important;
+
+	text-align: center;
+}

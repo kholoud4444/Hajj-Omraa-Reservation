@@ -1,0 +1,35 @@
+.wrapper {
+	display: flex;
+	gap: 1rem;
+	width: 100%;
+}
+
+.main {
+	width: 100%;
+}
+
+.main h2 {
+	padding: 2rem;
+	background-color: black;
+	color: #d3b923;
+}
+
+.btn-box {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.btn-box button {
+	border-color: transparent;
+	background-color: transparent;
+	transition: all 0.4s;
+}
+
+.btn-box button:hover {
+	transform: scale(1.1);
+}
+
+.btn-box i[title='Edit'],
+.btn-box i[title='Delete'] {
+	color: #d3b923;
+}

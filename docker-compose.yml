@@ -1,0 +1,140 @@
+version: "3"
+
+services:
+
+   front:
+     build: /Frontend
+     container_name: frontend-service-container
+     ports:
+       - "3000:3000"
+
+   hajjs_service:
+     build: ./Backend/hajjs_service
+     container_name: hajjs_service_container
+     ports:
+       - "5000:5000"
+     networks:
+       - ecommerce-app
+     links:
+       - hajjs_db
+     restart: on-failure
+     depends_on:
+       - hajjs_db
+
+   hajjs_db:
+     image: mongo:3.6.19-xenial
+     ports:
+       - "27017:27017"
+     networks:
+       - ecommerce-app
+     volumes:
+       - hajjs-volume:/data/db
+
+   omras_service:
+     build: ./Backend/omras_service
+     container_name: omras_service_container
+     ports:
+       - "5001:5001"
+     networks:
+       - ecommerce-app
+     links:
+      - omras_db
+    depends_on:
+      - omras_db
+
+   omras_db:
+     image: mongo:3.6.19-xenial
+     ports:
+       - "27018:27017"
+     networks:
+       - ecommerce-app
+     volumes:
+       - omras-volume:/data/db
+
+   users_service:
+    build: ./Backend/users_service
+    container_name: users_service_container
+    ports:
+      - "5002:5002"
+    networks:
+      - ecommerce-app
+    links:
+      - users_db
+    depends_on:
+      - users_db
+
+  users_db:
+    image: mongo:3.6.19-xenial
+    ports:
+      - "27019:27017"
+    networks:
+      - ecommerce-app
+    volumes:
+      - users-volume:/data/db
+
+  transport:
+    build: ./Backend/Transportation
+    container_name: Transport_container
+    ports:
+      - "3001:3001"
+    depends_on:
+      - trans-DB
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - ecommerce-app
+
+  trans-DB:
+    image: mysql:latest
+    container_name: trans-DB
+    environment:
+      MYSQL_DATABASE: trans
+      MYSQL_ROOT_PASSWORD: 1234
+    networks:
+      - ecommerce-app
+    volumes:
+      - mysql-data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  request:
+    build: ./Backend/Request
+    container_name: Request_container
+    ports:
+      - "3002:3002"
+    depends_on:
+      - request-DB 
+    networks:
+      - ecommerce-app
+
+  request-DB:
+    image: mysql:latest
+    container_name: request-DB
+    environment:
+      MYSQL_DATABASE: bus_booking
+      MYSQL_ROOT_PASSWORD: 1234
+    networks:
+      - ecommerce-app
+    volumes:
+      - req-data:/var/lib/mysql
+    ports:
+      - "3300:3306"
+  
+  
+
+networks:
+  ecommerce-app:
+    driver: bridge
+  
+
+volumes:
+  mysql-data:
+    driver: local
+  req-data:
+    driver: local
+  hajjs-volume:
+    driver: local
+  omras-volume:
+    driver: local
+  users-volume:
+    driver: local

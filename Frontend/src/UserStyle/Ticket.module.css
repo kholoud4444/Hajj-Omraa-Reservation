@@ -1,0 +1,144 @@
+.searchForm {
+
+	max-width: 40rem;
+	margin-inline: auto;
+	margin-block: 4rem;
+	display: flex;
+}
+
+#request {
+	background-color: #d3b923;
+	color: black;
+	border-radius: 10px;
+	padding: 10px 5px;
+	width: 100px;
+	display: block;
+	margin-left: auto;
+	cursor: pointer;
+	transition: all 0.3s;
+	outline: none;
+	border-color: transparent;
+}
+
+#request:hover {
+	background: #d3b923;
+	color: black;
+	transform: scale(1.1);
+}
+
+.trans {
+	background: #fff;
+	/* padding: 34px; */
+
+	padding-bottom: 10px;
+	padding-right: 10px;
+	border-radius: 6px;
+	box-shadow: 0 0px 5px 5px rgba(0, 0, 0, 0.2);
+	height: 150px;
+	padding-top: 20px;
+
+}
+
+.ticket {
+	background: #fff;
+	/* padding: 34px; */
+
+	padding-bottom: 10px;
+	padding-right: 10px;
+	border-radius: 6px;
+	box-shadow: 0 0px 5px 5px rgba(0, 0, 0, 0.2);
+	margin-bottom: 4rem;
+
+	width: 500px;
+	height: 350px;
+	margin-inline: auto;
+	flex-basis: 33.33333
+}
+
+.ticket h1 {
+	margin-bottom: 20px;
+}
+
+.ticket:last-of-type {
+	margin-bottom: 5rem;
+}
+
+.wrappers h2 {
+	background: #fff;
+
+}
+
+.wrappers h3 {
+	background: #fff;
+}
+
+.searchTerm {
+	width: 100%;
+	border: 3px solid black;
+	border-right: none;
+	padding: 5px;
+	height: 36px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+}
+
+.searchTerm:focus {
+	color: black;
+}
+
+.searchButton {
+	width: 40px;
+	height: 36px;
+	border: 1px solid black;
+	background: black;
+	text-align: center;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+i {
+	transition: all 0.3s;
+	color: #d3b923
+}
+
+i:hover {
+	transform: scale(1.2);
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 50px;
+	flex-wrap: wrap;
+}
+
+.flex img {
+	width: 400px;
+	height: 200px;
+}
+
+.flex h4 {
+	padding-left: 10px;
+}
+
+.flex h2 {
+	padding-left: 10px;
+}
+
+#accept {
+	display: block;
+	background-color: #d3b923;
+	color: black;
+	text-transform: capitalize;
+	border: none;
+	border-radius: 10px;
+	margin-left: auto;
+	padding: 0.8rem 1rem;
+	transition: all 0.4s;
+}
+
+#accept:hover {
+	background-color: #d3b923;
+}

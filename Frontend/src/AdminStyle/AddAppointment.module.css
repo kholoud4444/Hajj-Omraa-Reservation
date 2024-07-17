@@ -1,0 +1,51 @@
+.add-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 22rem;
+
+	background-color: #fff;
+	padding: 2rem;
+	border-radius: 5px;
+	box-shadow: 0 0px 10px 10px rgba(0, 0, 0, 0.2);
+
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.add-modal h4 {
+	font-size: calc(1.275rem + 0.3vw);
+}
+
+.btn-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn-box button {
+	border-color: transparent;
+	padding: 0.2rem 0.8rem;
+	border-radius: 5px;
+	transition: all 0.4s;
+}
+
+.btn-cancel {
+	background-color: transparent;
+	color: #000;
+}
+
+.btn-cancel:hover {
+	color: rgb(229, 91, 91);
+}
+
+.btn-save {
+	background-color: #d3b923;
+	color: #212529;
+}
+
+.btn-save:hover {
+	background-color: #d3b923;
+}
