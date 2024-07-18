@@ -22,7 +22,7 @@ The Hajj and Omraa Reservation project is a web-based application for booking bu
 * Navigate to http://localhost:3000 in your browser to use the application.
 * If you are a traveler, you can browse available appointments, request an appointment, and view your appointment history.
 * If you are an admin, you can manage appointments, bus destinations, and travelers, and view the history of all traveler requests for all appointments.
-* You can also test the API endpoints using Postman by sending requests to http://localhost:4000.
+
 ## Technologies Used
 * Microservice
 * Node.js
